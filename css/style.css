@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 2em;
+  color: rgb(68, 60, 60);
+  cursor: default;
+}
+
+span {
+  color: orange;
+}
+
+.navigation a {
+  font-size: 1.1em;
+  color: rgb(68, 60, 60);
+  text-decoration: none;
+  margin-right: 40px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.navigation a:hover {
+  color: orange;
+}
+
+.tombol-download {
+  color: white;
+  text-decoration: none;
+  padding: 8px 35px;
+  background: orange;
+  border-radius: 10px;
+  border: 2px solid orange;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.tombol-download:hover {
+  color: orange;
+  background: transparent;
+}
+
+.home {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  /* background: url(https://cdn.discordapp.com/attachments/1119981580983742575/1119982635230449724/00087-138475601.png); */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 100px;
+}
+
+/* harusnya body bukan .body */
+body {
+  /* sebelum: "asset/tampilan.jpg" => di file yang sama, klo ditambah "../" dia mundur satu folder, makanya gambarnya ga ketemu */
+  background-image: url("../asset/tampilan.jpg"); /* Ganti 'gambar-background.jpg' dengan path gambar yang diinginkan */
+  background-size: cover; /* Menyesuaikan gambar agar selalu menutupi seluruh latar belakang */
+  background-repeat: no-repeat; /* Mencegah gambar diulang di latar belakang */
+  background-attachment: fixed; /* Membuat gambar tetap dalam posisi saat menggulir halaman */
+}
+.mg-container {
+  position: relative;
+  background-color: aqua;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1/1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.img-pfp {
+  position: static;
+  border-radius: 9999px;
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+  aspect-ratio: 1/1;
+}
+
+.content {
+  max-width: 500px;
+  color: rgb(68, 60, 60);
+}
+
+.content h2 {
+  font-size: 3em;
+}
+
+.content h4 {
+  font-size: 2em;
+}
+
+.content p {
+  padding: 10px 0 40px 0;
+}
+
+.grup-tombol a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 40px;
+  background: orange;
+  border-radius: 10px;
+  border: 2px solid orange;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.grup-tombol a:hover:nth-child(1) {
+  color: orange;
+  background: transparent;
+}
+
+.grup-tombol a:nth-child(2) {
+  color: orange;
+  background: transparent;
+  margin-left: 30px;
+  padding: 10px 30px;
+}
+
+.grup-tombol a:hover:nth-child(2) {
+  color: white;
+  background: orange;
+}
+
+.sosmed {
+  position: absolute;
+  bottom: 50px;
+}
+
+.sosmed a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background: transparent;
+  border-radius: 50%;
+  margin-right: 22px;
+  text-align: center;
+  line-height: 40px;
+  outline: 3px solid orange;
+  transition: 0.3s;
+}
+
+.sosmed a:hover {
+  transform: translateY(-5px);
+}
+
+.sosmed a i {
+  color: rgb(68, 60, 60);
+  font-size: 20px;
+}

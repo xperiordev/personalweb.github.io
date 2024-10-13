@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    background-image: url("../asset/tampilan1.jpg"); /* Ganti 'gambar-background.jpg' dengan path gambar yang diinginkan */
+    background-size: cover; /* Menyesuaikan gambar agar selalu menutupi seluruh latar belakang */
+    background-repeat: no-repeat; /* Mencegah gambar diulang di latar belakang */
+    background-attachment: fixed; /* Membuat gambar tetap dalam posisi saat menggulir halaman */
+}
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+}
+
+.gallery-item {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    width: 50%; /* Adjust width as needed */
+    text-align: center;
+    padding: 10px;
+}
+
+.gallery-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: contain;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-text {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+}
